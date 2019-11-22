@@ -128,7 +128,6 @@ navinit = function navinit() {
     })
 }
 
-// $('#navigator').bind('tree.click', function (event) {
 naviclick = function naviclick(event) {
     var node = event.node.name; // node === "BSUEB: Bestands-Übersicht"
     UTIL.logger(dialogname + ': navigator.click() # 1: node: ' + node)
@@ -152,8 +151,6 @@ naviclick = function naviclick(event) {
     if (!eingetragen) {
         var left = 100 + (Math.floor((Math.random() * 100) + 1) * 5)
         var top = 100 + (Math.floor((Math.random() * 100) + 1) * 5)
-            // var winProps = 'height=300,width=400,resizable=no,'
-            //  + 'status=no,toolbar=no,location=no,menubar=no,' + 'titlebar=no,scrollbars=no,' + 'left=' + left + ',top=' + top
         var _width = localStorage.getItem(aktdialog + '.width')
         _width = _width - _width / 120
         var _height = localStorage.getItem(aktdialog + '.height')
@@ -165,7 +162,6 @@ naviclick = function naviclick(event) {
             var winProps = 'height=500,width=600,left=' + left + ',top=' + top
         }
 
-        // var feserver = globalconfig.ferver; //"feserver": "localhost:8090",
         var dianame = aktdialog.substring(0, 1).toUpperCase() + aktdialog.substring(1) + 'WRW'
         UTIL.logger(dialogname + ': navigator.click() # 5: dianame: ' + dianame)
         var newWin = window.open('http://' + feserver + '/' + dianame + '/' + aktdialog + '/' + aktdialog + '.html', '_blank')
@@ -175,5 +171,4 @@ naviclick = function naviclick(event) {
         UTIL.logger(dialogname + ': navigator.click() # 6: localStorage: aktdialog: ' +
             aktdialog + ' auf focus gesetzt')
     }
-    // })
 }
