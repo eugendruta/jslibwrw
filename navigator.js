@@ -1,4 +1,5 @@
 //Navigator
+UTIL.logger('navigator(): feserver: ' + globalconfig.feserver);
 var feserver = globalconfig.feserver; //"feserver": "localhost:8090",
 var bckendurl = globalconfig.bckendurl; //"bckendurl": "localhost:8080/WebRWinMvn",
 
