@@ -1,6 +1,3 @@
-var ws
-    // Servername
-
 var UTIL = {
     logger: function logger(msg) {
         if (globalconfig.LOGGER) {
