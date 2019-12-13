@@ -172,3 +172,34 @@ naviclick = function naviclick(event) {
             aktdialog + ' auf focus gesetzt')
     }
 }
+
+naviclickdia = function naviclickdia(aktdialog) {
+    UTIL.logger(dialogname + ': naviclickdia() # 1: dialog: ' + aktdialog)
+
+    var eingetragen = localStorage.getItem(aktdialog)
+    UTIL.logger(dialogname + ': naviclickdia() # 2: aktdialog: ' + aktdialog +
+        ' localStorage eintrag: ' + eingetragen)
+    if (!eingetragen) {
+        var left = 100 + (Math.floor((Math.random() * 100) + 1) * 5)
+        var top = 100 + (Math.floor((Math.random() * 100) + 1) * 5)
+        var _width = localStorage.getItem(aktdialog + '.width')
+        _width = _width - _width / 120
+        var _height = localStorage.getItem(aktdialog + '.height')
+        _height = _height - _height / 120
+        UTIL.logger(dialogname + ': naviclickdia() # 4: aktdialog: ' + aktdialog + '; _width: ' + _width + '; _height: ' + _height)
+        if (_width && _height) {
+            var winProps = 'height=' + _height + ',width=' + _width + 'left=' + left + ',top=' + top
+        } else {
+            var winProps = 'height=500,width=600,left=' + left + ',top=' + top
+        }
+
+        var dianame = aktdialog.substring(0, 1).toUpperCase() + aktdialog.substring(1) + 'WRW'
+        UTIL.logger(dialogname + ': naviclickdia() # 5: dianame: ' + dianame)
+        var newWin = window.open('http://' + feserver + '/' + dianame + '/' + aktdialog + '/' + aktdialog + '.html', '_blank')
+
+        localStorage.setItem(aktdialog, 'focus')
+        _eingetragen = true
+        UTIL.logger(dialogname + ': naviclickdia() # 6: localStorage: aktdialog: ' +
+            aktdialog + ' auf focus gesetzt')
+    }
+}
