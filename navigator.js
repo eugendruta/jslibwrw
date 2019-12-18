@@ -52,13 +52,13 @@ var data = [{
 }, {
   label: 'Wareneingang',
   children: [{
-    label: 'WA 1',
+    label: 'WA 7',
     children: [
-      { label: 'WAUE1: WA1-Übersicht' },
-      { label: 'POUEB: Positions-Übersicht' }
+      { label: 'WAUE4: WA1-Übersicht' },
+      { label: 'POUE4: Positions-Übersicht' }
     ]
   },
-  { label: 'WA 2' }
+  { label: 'WA 8' }
   ]
 }, {
   label: 'Auftragsabwicklung',
