@@ -63,13 +63,13 @@ var data = [{
 }, {
   label: 'Auftragsabwicklung',
   children: [{
-    label: 'WA 1',
+    label: 'WA 9',
     children: [
-      { label: 'WAUE1: WA1-Übersicht' },
-      { label: 'POUEB: Positions-Übersicht' }
+      { label: 'WAUE5: WA1-Übersicht' },
+      { label: 'POUE5: Positions-Übersicht' }
     ]
   },
-  { label: 'WA 2' }
+  { label: 'WA 10' }
   ]
 }, {
   label: 'Transportverwaltung',
