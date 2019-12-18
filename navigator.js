@@ -14,7 +14,7 @@ var data = [{
     label: 'WA 1',
     children: [
       { label: 'WAUE1: WA1-Übersicht' },
-      { label: 'POUEB: Positions-Übersicht' }
+      { label: 'POUE1: Positions-Übersicht' }
     ]
   },
   { label: 'WA 2' }
@@ -22,24 +22,24 @@ var data = [{
 }, {
   label: 'Lagerverwaltung',
   children: [{
-    label: 'WA 1',
+    label: 'WA 3',
     children: [
-      { label: 'WAUE1: WA1-Übersicht' },
-      { label: 'POUEB: Positions-Übersicht' }
+      { label: 'WAUE2: WA1-Übersicht' },
+      { label: 'POUE2: Positions-Übersicht' }
     ]
   },
-  { label: 'WA 2' }
+  { label: 'WA 4' }
   ]
 }, {
   label: 'Geräteverwaltung',
   children: [{
-    label: 'WA 1',
+    label: 'WA 5',
     children: [
-      { label: 'WAUE1: WA1-Übersicht' },
-      { label: 'POUEB: Positions-Übersicht' }
+      { label: 'WAUE3: WA1-Übersicht' },
+      { label: 'POUE3: Positions-Übersicht' }
     ]
   },
-  { label: 'WA 2' }
+  { label: 'WA 6' }
   ]
 }, {
   label: 'Bestandsverwaltung',
