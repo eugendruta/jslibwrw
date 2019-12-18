@@ -5,7 +5,7 @@ var bckendurl = globalconfig.bckendurl; // "bckendurl": "localhost:8080/WebRWinM
 var data = [{
   label: 'Administration',
   children: [
-    { label: 'ADUEB: Administration-Übersicht' },
+    { label: 'ADUEB: Administrationübersicht' },
     { label: 'AUUEB: Auftragsübersicht' }
   ]
 }, {
@@ -44,7 +44,7 @@ var data = [{
 }, {
   label: 'Bestandsverwaltung',
   children: [
-    { label: 'BSUEB: Bestands-Übersicht' },
+    { label: 'BSUEB: Bestandsübersicht' },
     { label: 'AVUEB: Auftragsübersicht' },
     { label: 'AVDET: Auftragsdetail' },
     { label: 'BPROT: Bestandsprotokoll' }
