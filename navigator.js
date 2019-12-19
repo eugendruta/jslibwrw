@@ -17,29 +17,29 @@ var data = [{
       { label: 'POUE1: Positions-Übersicht' }
     ]
   },
-  { label: 'WA 2' }
+  { label: 'WAUE2: WA2-Übersicht' }
   ]
 }, {
   label: 'Lagerverwaltung',
   children: [{
     label: 'WA 3',
     children: [
-      { label: 'WAUE2: WA1-Übersicht' },
+      { label: 'WAUE2: WA2-Übersicht' },
       { label: 'POUE2: Positions-Übersicht' }
     ]
   },
-  { label: 'WA 4' }
+  { label: 'WAUE3: WA3-Übersicht' }
   ]
 }, {
   label: 'Geräteverwaltung',
   children: [{
     label: 'WA 5',
     children: [
-      { label: 'WAUE3: WA1-Übersicht' },
+      { label: 'WAUE3: WAUE3-Übersicht' },
       { label: 'POUE3: Positions-Übersicht' }
     ]
   },
-  { label: 'WA 6' }
+  { label: 'WAUE4: WA4-Übersicht' }
   ]
 }, {
   label: 'Bestandsverwaltung',
@@ -58,7 +58,7 @@ var data = [{
       { label: 'POUE4: Positions-Übersicht' }
     ]
   },
-  { label: 'WA 8' }
+  { label: 'WAUE5: WA5-Übersicht' }
   ]
 }, {
   label: 'Auftragsabwicklung',
@@ -69,7 +69,7 @@ var data = [{
       { label: 'POUE5: Positions-Übersicht' }
     ]
   },
-  { label: 'WA 10' }
+  { label: 'WAUE6: WA6-Übersicht' }
   ]
 }, {
   label: 'Transportverwaltung',
@@ -80,7 +80,7 @@ var data = [{
       { label: 'POUEB: Positions-Übersicht' }
     ]
   },
-  { label: 'WA 2' }
+  { label: 'WAUE7: WA7-Übersicht' }
   ]
 }, {
   label: 'Kommissionierung',
