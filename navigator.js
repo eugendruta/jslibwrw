@@ -11,7 +11,7 @@ var data = [{
 }, {
   label: 'Stammdaten',
   children: [{
-    label: 'WA 1',
+    label: 'Submenue 1',
     children: [
       { label: 'WAUE1: WA1-Übersicht' },
       { label: 'POUE1: Positions-Übersicht' }
@@ -22,7 +22,7 @@ var data = [{
 }, {
   label: 'Lagerverwaltung',
   children: [{
-    label: 'WA 3',
+    label: 'Submenue 2',
     children: [
       { label: 'WAUE2: WA2-Übersicht' },
       { label: 'POUE2: Positions-Übersicht' }
@@ -33,7 +33,7 @@ var data = [{
 }, {
   label: 'Geräteverwaltung',
   children: [{
-    label: 'WA 5',
+    label: 'Submenue 3',
     children: [
       { label: 'WAUE3: WAUE3-Übersicht' },
       { label: 'POUE3: Positions-Übersicht' }
@@ -52,7 +52,7 @@ var data = [{
 }, {
   label: 'Wareneingang',
   children: [{
-    label: 'WA 7',
+    label: 'Submenue 4',
     children: [
       { label: 'WAUE4: WA1-Übersicht' },
       { label: 'POUE4: Positions-Übersicht' }
@@ -63,7 +63,7 @@ var data = [{
 }, {
   label: 'Auftragsabwicklung',
   children: [{
-    label: 'WA 9',
+    label: 'Submenue 5',
     children: [
       { label: 'WAUE5: WA1-Übersicht' },
       { label: 'POUE5: Positions-Übersicht' }
@@ -74,7 +74,7 @@ var data = [{
 }, {
   label: 'Transportverwaltung',
   children: [{
-    label: 'WA 1',
+    label: 'Submenue 6',
     children: [
       { label: 'WAUE1: WA1-Übersicht' },
       { label: 'POUEB: Positions-Übersicht' }
