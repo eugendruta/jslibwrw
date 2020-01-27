@@ -173,10 +173,11 @@ naviclick = function naviclick(event) {
   }
 }
 
-naviclickdia = function naviclickdia(aktdialog) {
+naviclickdia = function naviclickdia(aktdialog, param) {
   //aktdialog: ADUEB: Administration-Übersicht
   aktdialog = aktdialog.toString().substr(0, 5).toLowerCase()
-  UTIL.logger(dialogname + ': naviclickdia() # 1: dialog: ' + aktdialog)
+  UTIL.logger(dialogname + ': naviclickdia() # 1: dialog: ' + aktdialog
+	+ '; param: ' + param)
 
   var eingetragen = localStorage.getItem(aktdialog)
   UTIL.logger(dialogname + ': naviclickdia() # 2: aktdialog: ' + aktdialog +
