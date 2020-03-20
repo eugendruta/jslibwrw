@@ -173,10 +173,11 @@ naviclick = function naviclick(event) {
   }
 }
 
-naviclickdia = function naviclickdia(aktdialog) {
+naviclickdia = function naviclickdia(aktdialog, param) {
   //aktdialog: ADUEB: Administration-Übersicht
   aktdialog = aktdialog.toString().substr(0, 5).toLowerCase()
-  UTIL.logger(dialogname + ': naviclickdia() # 1: dialog: ' + aktdialog)
+  UTIL.logger(dialogname + ': naviclickdia() # 1: dialog: ' + aktdialog
+    + '; param: ' + param)
 
   var eingetragen = localStorage.getItem(aktdialog)
   UTIL.logger(dialogname + ': naviclickdia() # 2: aktdialog: ' + aktdialog +
@@ -200,8 +201,13 @@ naviclickdia = function naviclickdia(aktdialog) {
     var newWin = window.open('http://' + feserver + '/' + dianame + '/' + aktdialog + '/' + aktdialog + '.html', '_blank')
 
     localStorage.setItem(aktdialog, 'focus')
-    _eingetragen = true
     UTIL.logger(dialogname + ': naviclickdia() # 6: localStorage: aktdialog: ' +
       aktdialog + ' auf focus gesetzt')
+    //parameter Folgedialog eintragen
+    var parmfolge = {"mandant": "efa", "auftnr": 12345, "tl": 6789}
+    _eingetragen = true
+    UTIL.logger(dialogname + ': naviclickdia() # 7: localStorage: aktdialog.param: ' +
+      aktdialog + '.param: ' + JSON.stringify(parmfolge))
+    localStorage.setItem(aktdialog + '.param', JSON.stringify(parmfolge))	  
   }
 }
